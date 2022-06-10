@@ -1,0 +1,187 @@
+
+// pagina principal
+
+.header-inicio {
+    display: flex;
+    justify-content: end;
+    margin-top: 0.3rem;
+    .container-fluid {
+        width: 12rem;
+        display: flex;
+        justify-content: end;
+        align-items: center;
+        .logo-container {
+            @include medidas (6rem, 3.5rem);
+            .logo {
+            width: 100%;
+            }
+        }
+        .navbar-toggler {
+            border: none;
+            color: $color-secundario;
+        }
+        .listado {
+            border-radius: 0px 200px 0px 200px;
+            -moz-border-radius: 0px 200px 0px 200px;
+            -webkit-border-radius: 0px 200px 0px 200px;
+            border: 0px solid #000000;
+            .nav-item {
+                display: flex;
+                flex-direction: column;
+                justify-content: end;
+                align-items: end;
+                background-color: $color-secundario;
+                width: 5.7rem;
+                padding: 0rem 0.2rem;
+                .nav-link{
+                    color: $color-terciario;
+                    font-size: 0.9rem;
+                    line-height: 0.7rem;
+                }
+                .nav-link:hover{
+                    font-weight:bold;
+                    transform: scale(1.1);
+                }
+                .dropdown-menu {
+                    background-color: transparent;
+                    border: none;
+                    .dropdown-item {
+                        display: flex;
+                        justify-content: end;
+                        color: $color-terciario;
+                        font-size: 0.8rem;
+                        line-height: 0.6rem;
+                    }
+                    .dropdown-item:hover>ul {
+                        display: block;
+                    } 
+                }
+            }
+        }
+    }
+}
+
+
+
+// paginas nosotros y galeria
+
+.header-paginas {
+    display: flex;
+    background-color: $color-secundario;
+    justify-content: end;
+    margin: 0rem;
+    .paginas {
+        width: 12rem;
+        display: flex;
+        justify-content: end;
+        align-items: center;
+        .logo-paginas {
+            @include medidas (6rem, 3.5rem);
+            .logo-principal {
+            width: 100%;
+            }
+        }
+        .navbar-toggler {
+            border: none;
+            color: $color-secundario;
+        }
+        .lista {
+            border-radius: 10rem;
+            .nav-item {
+                display: flex;
+                flex-direction: column;
+                justify-content: end;
+                align-items: end;
+                background-color: $color-secundario;
+                width: 5.7rem;
+                padding: 0rem 0.2rem;
+                .nav-link {
+                    color: $color-terciario;
+                    font-size: 0.9rem;
+                    line-height: 0.7rem;
+                }
+                .nav-link:hover {
+                    font-weight:bold;
+                    transform: scale(1.1);
+                }
+                .dropdown-menu {
+                    background-color: transparent;
+                    border: none;
+                    .dropdown-item {
+                        display: flex;
+                        justify-content: end;
+                        color: $color-terciario;
+                        font-size: 0.8rem;
+                        line-height: 0.6rem;
+                    }
+                    .dropdown-item:hover>ul {
+                        display: block;
+                    } 
+                }
+            }
+        }
+    }
+}
+
+
+
+// paginas servicio y contacto
+
+
+.header-pag {
+    display: flex;
+    justify-content: end;
+    background-color: $color-terciario;
+    margin: 0rem;
+    .paginas {
+        width: 12rem;
+        display: flex;
+        justify-content: end;
+        align-items: center;
+        .logo-paginas {
+            @include medidas (6rem, 3.5rem);
+            .logo-principal {
+            width: 100%;
+            }
+        }
+        .navbar-toggler {
+            border: none;
+            color: $color-terciario;
+        }
+        .lista {
+            border-radius: 10rem;
+            .nav-item {
+                display: flex;
+                flex-direction: column;
+                justify-content: end;
+                align-items: end;
+                background-color: $color-terciario;
+                width: 5.7rem;
+                padding: 0rem 0.2rem;
+                .nav-link {
+                    color: $color-secundario;
+                    font-size: 0.9rem;
+                    line-height: 0.7rem;
+                }
+                .nav-link:hover {
+                    font-weight:bold;
+                    transform: scale(1.1);
+                }
+                .dropdown-menu {
+                    background-color: transparent;
+                    border: none;
+                    .dropdown-item {
+                        display: flex;
+                        justify-content: end;
+                        color: $color-secundario;
+                        font-size: 0.8rem;
+                        line-height: 0.6rem;
+                    }
+                    .dropdown-item:hover>ul {
+                        display: block;
+                    } 
+                }
+            }
+        }
+    }
+}

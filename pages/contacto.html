@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+<!--  palabras claves  -->
+
+<meta name="keywords" content=" Contactarnos - datos - horario de atención - mensaje - reserva. ">
+
+<!--  descripcion de la pagina  -->
+
+
+<meta name="description" content= "Datos del lugar, nuestros horario de atención y como llegar. Por este medio podés contactarnos para reserva, dejarnos un mensaje o consulta. Te responderemos a la brevedad.">
+
+
+
+
+<!-- link bt -->
+
+ <!-- CSS only -->
+ <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+
+
+
+
+<!--  link animacion  -->
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    
+
+    <!-- link css -->
+    
+    <link rel="stylesheet" href="../css/style.css">
+
+    <title>CONTACTO</title>
+
+
+</head>
+<body>
+
+  <!-- encabezado -->
+
+
+  <header class="header-pag">
+
+    <nav class="navbar navbar-expand-lg navbar-light">
+
+        <div class="container-fluid paginas">
+
+          <a class="navbar-brand logo-paginas" href="../index.html"><img class="logo-principal animate__animated animate__jackInTheBox" src="../img/logo.jpg" alt="logo de Pretos - club de birras"></a>
+
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon boton "></span>
+          </button>
+
+          <div class="lista collapse navbar-collapse" id="navbarSupportedContent">
+
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+              <li class="nav-item">
+
+                <a class="nav-link" aria-current="page" href="../index.html">INICIO</a>
+
+              </li>
+
+              <li class="nav-item">
+
+                <a class="nav-link active" href="nosotros.html">NOSOTROS</a>
+
+              </li>
+
+              <li class="nav-item dropdown">
+
+                <a class="nav-link dropdown-toggle" href="servicios.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">SERVICIOS</a>
+
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+
+                  <li><a class="dropdown-item" href="#">CLUB</a></li>
+
+                  <li><a class="dropdown-item" href="#">BAR</a></li>
+
+                  <li><a class="dropdown-item" href="#">EVENTOS</a></li>
+
+                </ul>
+
+              </li>
+
+              <li class="nav-item">
+
+                <a class="nav-link" href="galeriasdefotos.html">GALERIA</a>
+
+              </li>
+
+              <li class="nav-item">
+
+                <a class="nav-link animate__animated animate__bounce" href="contacto.html">CONTACTO</a>
+
+              </li>
+
+            </ul>
+            
+          </div>
+
+        </div>
+
+    </nav>
+
+</header>
+    
+
+    <!-- inicio cuerpo de pagina -->
+
+
+    <main class="contacto">
+        
+        <section class="planoInfo">
+
+            <img class="plano" src="../img/mapa.png" alt="">
+
+            <article class="datos">
+
+                <div class="datos1">
+                   <ul>
+                        <li>AV. JORGE NEWBERY 8922</li>
+                        <li>+543413146043</li>
+                        <li>pretosclubdebirras@gmail.com</li>
+                    </ul>  
+                </div>
+                   
+            
+            <div class="horario">
+                <ul>
+                  <li class="horario">HORARIO DE ATENCIÓN
+                   11:30 A 20 HS</li>  
+                </ul>  
+            </div>    
+            </article>
+              
+        </section>
+                
+    
+        <section>
+    
+                    <form class="formulario animate__animated animate__slideInUp">
+            
+                        <fieldset class="contenedor-form">
+            
+                            <legend class="titulo-form">CONTACTANOS</legend>
+            
+                                <div class="div-lin">
+                                    <label for="nombre">NOMBRE</label>
+                                    <input class="nombre" type="text" name="nombre" placeholder="ingresa tu nombre">
+                                </div>
+            
+                                <div class="div-lin">
+                                    <label for="mail">E-MAIL</label>
+                                    <input class="email" type="email" name="mail" placeholder="ingresa tu mail">
+                                </div>
+            
+                                <div class="div-lin">
+                                    <label for="teléfono">TELÉFONO</label>
+                                    <input class="telefono" type="number" name="number" placeholder="ingresa tu teléfono">
+                                </div>
+            
+                                <div class="l-interes" >
+                                    <label class="la-interes" for="interés">SELECCIONA TU INTERÉS</label>
+                                    <select class="interes" name="interés" id="">
+                                        <option value="club">club</option>
+                                        <option value="bar">bar</option>
+                                        <option value="eventos">eventos</option>
+                                        </select>
+                                </div>
+            
+                               
+                                <div class="div-lin">
+                                    <label for="mensaje">MENSAJE</label>
+                                    <input class="mensaje" type="text" name="mensaje" placeholder="ingresa tu mensaje">
+                                </div>
+            
+                                <div class="div-terms">
+                                    <label class="terms" for="terms">¿Deseas recibir nuestras novedades?</label>
+                                    <input class="checkbox" type="checkbox" name="terms">  
+                                </div>
+            
+                                <div class="div-submit" >
+                                    <input type="submit" value="Enviar" class="enviar">
+                                    <input type="reset" value="Borrar mensaje" class="borrar">
+                                </div>
+
+                        </fieldset>
+
+                  </form>
+    
+            
+                  
+        
+          
+
+               <div class="interaccionContacto">
+                    <a href="https://www.facebook.com/Pretos-Club-de-Birra-312690599519139/?ref=page_internal" target="_blank" class="facebookContacto"><img src="../img/facebook.png" alt="">
+                    </a>
+                    <a href="https://www.instagram.com/clubdebirrapretos/" target="_blank" class="instagramContacto"> <img src="../img/instagram.png" alt=""></a>
+                    <a href="https://www.facebook.com/messages/t/312690599519139" target="_blank" class="messengerContacto"><img src="../img/messenger.png" alt=""></a>
+               </div>
+
+            </section>
+
+                  
+ 
+        
+    </main>
+
+
+    <!-- pie de pagina -->
+    
+
+    <footer class="footer-servicios">
+
+        <div class="div-footer">
+
+            <h2>PRETOS CLUB DE BIRRAS</h2>  
+
+            <h3>BAR / CERVECERIA - PILETA - CANCHAS DE FUTBOL 5 - PARRILLAS - EVENTOS</h3>
+
+            <h3>AV. JORGE NEWBERY 8922 - +543413146043 - pretosclubdebirras@gmail.com
+            </h3>
+
+        </div>
+
+
+        <div class="div2">
+
+            <h4>TODOS LOS DERECHOS RESERVADOS</h4>
+
+        </div>  
+                                                                               
+        <div class="div4">
+
+            <a href="https://www.google.com/maps/place/Av.+Jorge+Newbery+8922,+S2006CTS+Rosario,+Santa+Fe/@-32.9141279,-60.7661482,14.44z/data=!4m5!3m4!1s0x95b6527cd43c908d:0x4ac15aea6a5c1fb1!8m2!3d-32.908794!4d-60.756609" target="_blank"><img class="ubicacion"  src="../img/mapa.png" width="480" height="240" alt="plano de ubicación del lugar"></a> 
+
+        </div>
+                                        
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>  
+    
+
+    
+</body>
+</html>

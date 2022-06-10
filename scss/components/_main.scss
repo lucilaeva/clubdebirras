@@ -1,0 +1,623 @@
+
+// pagina principal
+
+
+.inicio {
+    .int-titulo {
+       margin: 1rem;
+       margin-bottom: 0rem;
+       height: 23rem;
+       background-image: url(../img/IMGPRESENTACION.jpg);
+       background-position: cover;
+       -webkit-box-shadow: 10px 10px 94px 22px rgba(0,0,0,0.48);
+        -moz-box-shadow: 10px 10px 94px 22px rgba(0,0,0,0.48);
+        box-shadow: 10px 10px 94px 22px rgba(0,0,0,0.48);
+        border-radius: 58px 0px 0px 0px;
+        -moz-border-radius: 58px 0px 0px 0px;
+        -webkit-border-radius: 58px 0px 0px 0px;
+        border: 0px solid #000000;
+       .interaccion {
+           display: flex;
+           flex-direction: column;
+           justify-content: end;
+           align-items: end;
+           padding: 1rem 0.5rem;
+           .interaccion-img {
+               @include medidas (1.5rem, 1.5rem);
+               margin: 0.2rem;
+               -webkit-box-shadow: 10px 10px 94px 22px rgba(0,0,0,0.48);
+                -moz-box-shadow: 10px 10px 94px 22px rgba(0,0,0,0.48);
+                box-shadow: 10px 10px 94px 22px rgba(0,0,0,0.48);
+                border-radius: 200px 61px 61px 200px;
+                -moz-border-radius: 200px 61px 61px 200px;
+                -webkit-border-radius: 200px 61px 61px 200px;
+                border: 0px solid #000000;
+           }
+       }
+       .titulo {
+           font-family: $letra-textos;
+           font-size: 3rem;
+           height: 15.6rem;
+           color: $color-secundario;
+           display: flex;
+           align-items: end;
+           justify-content: center;
+           text-shadow: 5px 5px  5px $color-cuarto;
+       }
+    }
+    
+    .texto-boton {
+        background-color: $color-cuarto;
+        margin: 0rem 1rem;
+        padding: 1rem;
+        height: 20rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        -webkit-box-shadow: 10px 10px 94px 22px rgba(0,0,0,0.48);
+        -moz-box-shadow: 10px 10px 94px 22px rgba(0,0,0,0.48);
+        box-shadow: 10px 10px 94px 22px rgba(0,0,0,0.48);
+        border-radius: 0px 0px 58px 0px;
+        -moz-border-radius: 0px 0px 58px 0px;
+        -webkit-border-radius: 0px 0px 58px 0px;
+        border: 0px solid #000000;   
+        .texto {
+            padding: 1.5rem;
+            text-align: center;
+            font-size: 1.1rem;
+            line-height: 1.4rem;
+            border-top: 0.2rem solid $color-secundario;
+            width: 23rem;
+            color: $color-secundario;
+            text-transform: uppercase;
+        }
+        .boton{
+            margin: 1rem;
+            @include medidas (9rem, 5rem);
+            @extend %botones;
+            a {
+                text-decoration: none;
+                color: $color-secundario;
+                font-weight: bold;
+                font-size: 1rem;
+                padding: 0.4rem;
+            }
+        }
+    }
+}
+
+
+
+
+// pagina nosotros 
+
+
+.nosotros {
+    background-color: $color-secundario;
+    .titulo-nosotros {
+        color: $color-terciario;
+        font-family: $letra-titulos;
+        text-align: center;
+        font-size: 3rem;
+        padding: 1.5rem;
+    }
+    .nosotros-sec {
+        background-color: $color-terciario;
+        height: 30rem;
+        .somos {
+            padding: 2rem;
+            .nosotros-text {
+                color: $color-principal;
+                text-align: center;
+                font-size: 1.1rem;
+                padding: 1rem;
+            }
+            .foto-nosotros {
+                margin-top: 1.5rem;
+                @include medidas (63vh, 60vw);
+            }
+        }
+        .abrimos {
+            height: 18rem;
+            background-color: $color-cuarto;
+            padding: 1rem 0rem;
+            margin: 1.5rem 0rem;
+            h2 {
+                text-align: center;
+                color: $color-secundario;
+                font-family: $letra-titulos;
+                font-size: 2.4rem;
+                margin: 2rem;
+                margin-bottom: 6rem;
+            }
+            .div-abrimos{
+                .video {
+                    margin: 0.3rem;
+                    .video-pretos {
+                        @include medidas (70vh, 55vw);
+                    }
+                }
+                .texto-video {
+                    text-align: center;
+                    color: $color-cuarto;
+                    font-size: 1.1rem;
+                    padding: 1rem;
+                    margin-top: 2rem;
+                }
+            }
+        }  
+    }    
+}
+
+
+
+// estilos pagina servicios
+
+
+.main-servicios {
+    .nuestros-servicios {
+        background-color: $color-terciario;
+        color: $color-principal;
+        font-size: 3rem;
+        font-family: $letra-titulos;
+        text-align: center;
+        padding: 2.5rem;
+    }
+    .sec-servicios {
+        .contenedor-azul {
+            background-color: $color-terciario;
+            width: 100%;
+            height: 40rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            .club-servicios {
+                background-color: $color-principal;
+                @include medidas (65vh, 235vw);
+                margin: 1rem;
+                border-radius: 2rem;
+                margin-top: 32rem;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                .club {
+                    .club-img {
+                        @include medidas (55vh, 60vw);
+                        border-radius: 2rem;
+                        padding: 1rem;
+                        margin-top: 1.5rem;
+                    }
+                }
+                .h2-uno {
+                    text-align: center;
+                    margin: 1rem;
+                    padding: 1rem;
+                    a {
+                        font-size: 2rem;
+                        text-decoration: none;
+                        color: $color-cuarto;
+                        padding: 6rem;
+                        padding-bottom: 1.2rem;
+                        border-bottom: 0.3rem solid $color-cuarto;
+                    }
+                }  
+                .contenedor-uno {
+                    margin: 1.2rem;
+                    padding: 1.5rem;
+                    text-align: center;
+                    justify-content: center;
+                    .p-uno {
+                        color: $color-cuarto;
+                        font-size: 1.1rem;
+                        justify-content: center;
+                        align-items: center;
+                    }   
+                }
+            }
+        }
+        .contenedor-amarillo {
+            background-color: $color-secundario;
+            width: 100%;
+            height: 80rem;
+            padding-top: 55rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            .bar-servicios {
+                background-color: $color-principal;
+                @include medidas (65vh, 200vw);
+                margin: 1rem;
+                border-radius: 2rem;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                .h2-dos {
+                    text-align: center;
+                    margin: 1rem;
+                    margin-top: 3rem;
+                    padding: 1rem;
+                    a {
+                        font-size: 2rem;
+                        text-decoration: none;
+                        color: $color-cuarto;
+                        padding: 6rem;
+                        padding-bottom: 1.2rem;
+                        border-bottom: 0.3rem solid $color-cuarto;
+                    }
+                }
+                .contenedor-dos {
+                    margin: 1.2rem;
+                    padding: 1.5rem;
+                    text-align: center;
+                    justify-content: center;
+                    .p-dos {
+                        color: $color-cuarto;
+                        font-size: 1.1rem;
+                        justify-content: center;
+                        align-items: center;
+                    } 
+                }
+                .bar {
+                    .bar-img {
+                        @include medidas (55vh, 60vw);
+                        border-radius: 2rem;
+                        padding: 1rem;
+                        margin-bottom: 1.5rem;
+                    }
+                }
+            }
+        }
+        .contenedor-azulino {
+            background-color: $color-terciario;
+            width: 100%;
+            height: 78rem;
+            padding-top: 20rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            .eventos-servicios {
+                background-color: $color-principal;
+                @include medidas (65vh, 150vw);
+                margin: 1rem;
+                border-radius: 2rem;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                .eventos {
+                    align-items: center;
+                    justify-content: center;
+                    align-items: center;
+                    .eventos-img {
+                        @include medidas (55vh, 60vw);
+                        border-radius: 2rem;
+                        padding: 1rem;
+                        margin-top: 1.5rem;
+                    }
+                }
+            }
+            .h2-tres {
+                text-align: center;
+                margin: 1rem;
+                padding: 1rem;
+                a {
+                    font-size: 2rem;
+                    text-decoration: none;
+                    color: $color-cuarto;
+                    padding: 3rem;
+                    padding-bottom: 1.2rem;
+                    border-bottom: 0.3rem solid $color-cuarto;
+                }
+            }
+            .contenedor-tres {
+                margin: 1rem;
+                padding: 1.5rem;
+                text-align: center;
+                justify-content: center;
+                .p-tres {
+                    color: $color-cuarto;
+                    font-size: 1.1rem;
+                    justify-content: center;
+                    align-items: center;
+                }   
+            } 
+        }
+    }
+    .boton-sec {
+        text-align: center;
+        background-color: $color-terciario;
+        .contactanos {
+            margin-bottom: 4rem;
+            @include medidas (12rem, 4rem);
+            @extend %botones;
+            a {
+                text-decoration: none;
+                color: $color-secundario;
+                font-weight: bold;
+                font-size: 1rem;
+                padding: 0.4rem;
+            }
+        }       
+    }               
+}
+
+
+
+// inicio estilos pagina galeria de fotos
+
+
+.galeria-fotos {
+    background-color: $color-secundario;
+    height: 100%;
+    .titulo-galeria {
+        font-size: 3rem;
+        color: $color-cuarto;
+        text-align: center;
+        margin: 3rem 0rem 5rem 0rem;
+        font-family: $letra-titulos;
+        padding: 5rem;
+        background-color: $color-principal;
+        width: 100%;
+    }
+    .c-galeria {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .club-galeria {
+            transform: rotate(270deg);
+            a {
+                text-decoration: none;
+                color: $color-terciario;
+                font-size: 2rem; 
+          }
+        }
+        .foto-club {
+            padding: 1rem;
+            .img-club {
+                @include medidas (15rem, 15rem);
+            }
+        }
+    }
+    .carousel {
+        .carousel-inner {
+        padding: 3rem 1rem;
+        @include medidas (30rem, 30rem);
+        
+    }
+    }
+    
+    
+    .b-galeria{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: $color-secundario;
+        margin-top: 3rem;
+        .foto-bar {
+        padding: 1rem;
+        margin-top: 3rem;
+            .img-bar {
+                @include medidas (16rem, 16rem)
+            }
+        }
+        .bar-galeria {
+            transform: rotate(90deg);
+            a {
+                text-decoration: none;
+                color: $color-terciario;
+                font-size: 2rem; 
+          }
+        }
+    }
+    .div-carousel {
+        background-color: $color-secundario;
+        .carousel {
+            padding: 3rem 1rem;
+            @include medidas (30rem, 30rem);
+        }
+    }
+    
+    .e-galeria {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 3rem 0rem;
+        background-color: $color-secundario;
+        .eventos-galeria {
+            transform: rotate(270deg);
+            a {
+                text-decoration: none;
+                color: $color-terciario;
+                font-size: 2rem;
+          }
+        }
+        .foto-eventos {
+            padding: 1rem;
+            .img-eventos {
+                @include medidas (17rem, 15rem);
+            }
+        }
+    }
+    .carousel {
+        .carousel-inner {
+        padding: 3rem 1rem;
+        @include medidas (30rem, 30rem);
+        }
+    }
+    
+}
+
+
+// inicio estilos pagina contacto 
+
+.contacto {
+    @include medidas (30rem, 50rem);
+    background-color: $color-cuarto;
+    display: grid;
+    margin: 5rem 0rem;
+    grid-template-rows: 8fr 2fr;
+    grid-template-columns: 6fr 4fr;
+    grid-template-areas: 
+                        "planoInfo formulario"
+                        "interaccionContacto interaccionContacto";
+    .planoInfo{
+        grid-area: planoInfo;
+        margin: 0rem;
+        justify-content: center;
+        align-items: center;
+        .plano{
+            margin: 5rem 0rem;
+            @include medidas (17rem, 20rem);
+        }
+        .datos{
+            display: grid;
+            @include medidas (2rem, 2rem);
+            margin-top: 4rem;
+            grid-template-columns: 1fr 1fr;
+            grid-template-areas: "datos1 horario";
+            .datos1{
+                grid-area: datos1;
+                color: $color-secundario;
+                font-size: 0.9rem;
+                margin-top: 2rem;
+                ul li{
+                    list-style-type: none;
+                    padding: 0.6rem;
+                    margin: 0.5rem; 
+                }
+            }
+            .horario {
+                grid-area: horario;
+                color: $color-secundario;
+                list-style-type: none;
+                font-size: 0.9rem;
+                width: 7rem;
+                margin-top: 2rem;
+                line-height: 1.7rem;
+                
+            }
+        }  
+    }
+
+    .formulario{
+        grid-area: formulario;
+        background-color: $color-secundario;
+        @include medidas (13rem, 25rem);
+        border: 0.2rem solid $color-principal;
+        margin-top: 2rem;
+        margin-right: 1rem;
+        .contenedor-form {
+            border: none;
+            .titulo-form{
+                color: $color-cuarto;
+                font-weight: bold;
+                font-size: 1rem;
+                padding: 1.2rem 0.5rem 0.2rem;
+            }
+            .div-lin{
+                margin: 1.5rem 0.5rem 0rem 0.5rem; 
+                border-bottom: solid 0.1rem $color-cuarto;
+                color: $color-cuarto;
+                font-size: 0.7rem;
+                .nombre{
+                    width: 8.3rem;
+                    height: 0.9rem;
+                    
+                }
+                .email{
+                    width: 8.9rem;
+                    height: 0.9rem;
+                        
+                }
+                .telefono{
+                    width: 7.7rem;
+                    height: 0.9rem;
+                      
+                }
+                .mensaje{
+                    width: 8.3rem;
+                    height: 0.9rem;
+                      
+                    
+                }
+            }
+            .l-interes {
+                color: $color-cuarto;
+                font-size: 0.7rem;
+                .la-interes{
+                    margin: 1.6rem 0.5rem 0.2rem 0.5rem;
+                    display: flex; 
+                    border-bottom: solid 0.1rem $color-cuarto;  
+                }
+                .interes{
+                    @include medidas (3rem, 1rem);
+                    border: none;
+                    position: absolute;
+                    top: 11.3rem;
+                    left: 9rem;
+                    color: $color-cuarto;
+                    font-size: 0.7rem;
+                }
+            }
+            .div-terms {
+                display: flex;
+                .terms{
+                    @include medidas (10rem, 2rem);
+                    font-size: 0.8rem;
+                    margin: 0.3rem;
+                       
+                }
+                .checkbox{
+                    margin-top: 1.5rem;
+                }
+            }
+            .div-submit {
+                display: flex;
+                height: 5rem;
+                align-items: end;
+                .enviar{
+                    font-size: 0.7rem;
+                    font-weight: bold;
+                    color: $color-principal;
+                    text-transform: uppercase;
+                    text-align: center;
+                    @extend %botones;
+                    @include medidas (5rem, 2.5rem)
+                    }
+                    .borrar{
+                        font-size: 0.7rem;
+                        font-weight: bold;
+                        color: $color-principal;
+                        text-transform: uppercase;
+                        background-color: $color-cuarto;
+                        @extend %botones;
+                        @include medidas (11rem, 2.5rem);
+                    }
+            }     
+        }
+    }
+    .interaccionContacto{
+        grid-area: interaccionContacto;
+        text-decoration: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 8rem;
+        a img{
+            @include medidas (2rem, 2rem);
+            margin: 1.5rem 0.5rem;
+        }
+    }
+
+}
+
+
+
+
+

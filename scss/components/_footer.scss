@@ -1,0 +1,114 @@
+
+// estilos pagina principal
+
+
+.footer-inicio{
+    color: $color-principal;
+    margin: 3.5rem;
+    .div-footer-ini {
+        text-align: center;
+        h2 {
+            text-align: center;
+            font-size: 0.9rem;
+            margin-bottom: 0.5rem;   
+        }
+        h3 {
+            font-size: 0.8rem;
+            margin-bottom: 0.2; 
+            }
+    } 
+
+    
+    .div2-inicio {
+        text-align: center;
+        margin: 1rem;
+        h4 {
+          font-size: 0.7rem;  
+        }
+        
+    }
+
+    .div4-inicio {
+        display: none;
+    }
+   
+}
+
+
+
+
+// estilos pagina nosotros
+
+
+.footer {
+    background-color: $color-terciario;
+    color: $color-principal;
+    margin: 62rem 0rem 2rem 0rem;
+    padding-top: 7rem;
+    .div-footer {
+        text-align: center;
+        h2 {
+            text-align: center;
+            font-size: 0.9rem;
+            margin-bottom: 0.5rem;   
+        }
+        h3 {
+            font-size: 0.8rem;
+            margin-bottom: 0.2rem; 
+            }
+    } 
+    .div2{
+        text-align: center;
+        margin: 1rem;
+        h4 {
+          font-size: 0.7rem;  
+        }
+        
+    }
+
+    .div4 {
+        margin: 2rem 0rem;
+        display: block;
+    }
+   
+}
+
+
+
+
+//  estilos pagina servicios
+
+
+.footer-servicios {
+    background-color: $color-terciario;
+    color: $color-principal;
+    margin: 6rem 0rem 2rem 0rem;
+    padding-top: 2rem;
+    .div-footer {
+        text-align: center;
+        h2 {
+            text-align: center;
+            font-size: 0.9rem;
+            margin-bottom: 0.5rem;   
+        }
+        h3 {
+            font-size: 0.8rem;
+            margin-bottom: 0.2rem; 
+            }
+    } 
+    .div2{
+        text-align: center;
+        margin: 1rem;
+        h4 {
+          font-size: 0.7rem; 
+        }
+        
+    }
+
+    .div4 {
+        margin: 2rem 0rem;
+        display: block;
+    }
+   
+}
+

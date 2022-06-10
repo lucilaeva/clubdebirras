@@ -1,0 +1,570 @@
+@media screen and (min-width:1024px) {
+
+
+// inicio estilos pagina principal vista destock 
+
+
+    .body-principal{
+        height: 100%;
+    }
+
+
+    .header-inicio {
+        margin: 2rem;
+        justify-content: center;
+        .container-fluid {
+            flex-direction: column;
+            .logo-container {
+                @include medidas (8rem, 4rem);
+            }
+        }
+        .listado {
+            .nav-item {
+                margin: 2rem;
+                margin-bottom: 0rem;
+                justify-content: center;
+                align-items: center;
+                border-radius: 200px 0px 200px 0px;
+                -moz-border-radius: 200px 0px 200px 0px;
+                -webkit-border-radius: 200px 0px 200px 0px;
+                border: 0px solid #000000;
+                .nav-link{
+                    font-size: 1.1rem;
+                    line-height: 2rem;
+                }
+                .nav-link:hover{
+                    transform: scale(1.2);
+                }   
+                .dropdown-menu {
+                    background-color: $color-secundario;
+                    border-radius: 50px;
+                    .dropdown-item {
+                        justify-content: start;
+                        align-items: start;
+                        font-size: 1rem;
+                        line-height: 0.7rem;
+                    }    
+                }
+            }
+        }
+    }
+
+    // estilos contenedor main pagina principal vista destock
+
+    .inicio{
+        display: grid;
+        grid-template-columns: 6fr 4fr;
+        grid-template-areas: "int-titulo texto-boton";
+        .int-titulo {
+            grid-area: int-titulo;
+            @include medidas (105vh, 70vw);
+            margin: 2rem;
+            margin-right: 0rem;
+            border-radius: 58px 0px 0px 58px;
+            -moz-border-radius: 58px 0px 0px 58px;
+            -webkit-border-radius: 58px 0px 0px 58px;
+            display: grid;
+            grid-template-columns: 3fr 7fr;
+            grid-template-areas: 
+                        "interaccion titulo" ;
+            .interaccion{
+                grid-area: interaccion;
+                justify-content: center;
+                align-items: start;
+                padding: 1rem;
+                .interaccion-img {
+                    @include medidas (2.5rem, 2.5rem);
+                    margin: 0.5rem;
+                }
+            }
+            .titulo {
+                grid-area: titulo;
+                font-size: 4rem;
+                transform: rotate(270deg);
+                justify-self: center;
+                align-self: center;
+                height: 27.5rem;   
+            }
+        }
+        .texto-boton{
+            grid-area: texto-boton;
+            height: 70vw;
+            margin: 2rem;
+            margin-left: 0rem;
+            border-radius: 0px 58px 58px 0px;
+            -moz-border-radius: 0px 58px 58px 0px;
+            -webkit-border-radius: 0px 58px 58px 0px;
+            .texto{
+                font-size: 1.2rem;
+                line-height: 1.6rem;
+                border-top: none;
+                border-left: 0.3rem solid $color-secundario;
+                text-align: start;
+                display: flex;
+                width: 17rem;
+                margin-top: 4rem;
+                padding: 2rem 3rem;  
+            }
+            .boton{
+                grid-area: boton;
+                @include medidas (12rem, 2.5rem); 
+                display: flex;
+                justify-content: center;
+                align-self: center;
+                margin: 2rem;
+                a {
+                    font-size: 1.1rem;
+                    padding: 0.2rem;
+                }
+            }
+        }
+    }
+
+// estilos contenedor footer pagina principal vista destock
+
+.footer-inicio{
+    margin: 3.5rem;
+    .div-footer-ini {
+        h2 {
+            font-size: 0.9rem;
+            margin: 1rem;   
+        }
+        h3 {
+            font-size: 0.8rem;
+            margin-bottom: 1.2rem; 
+            }
+    } 
+}
+    
+    .div2-inicio {
+        margin: 1.2rem;
+        h4 {
+          font-size: 0.8rem;  
+        }
+        
+    }
+
+    .div4-inicio {
+        display: none;
+    }
+
+}
+
+
+// incio estilos pagina nosotros vista destock
+
+@media screen and (min-width:1024px) {
+
+    .header-paginas {
+        justify-content: start;
+        .paginas {
+            width: 100%;
+            flex-direction: row;
+        }
+        .lista {
+            .nav-item {
+                margin-left: 1rem;
+                .nav-link {
+                   font-size: 1.1rem; 
+                }
+                .dropdown-menu {
+                   .dropdown-item {
+                    display: block;
+                    text-align: start;
+                    font-size: 1rem;
+                    line-height: 0.6rem;
+                    }   
+                }    
+            }
+        }
+    }
+
+// estilos contenedor main pagina nosotros   
+
+    .nosotros {
+        .titulo-nosotros {
+            font-size: 4rem;
+        }    
+        .nosotros-sec {
+            background-color: $color-secundario;
+            height: 15rem;
+            .somos {
+                display: grid;
+                justify-content: center;
+                align-items: start;
+                grid-template-columns: 3fr 7fr;
+                grid-template-areas: "nosotros-text foto-nosotros";
+                .nosotros-text {
+                    grid-area: nosotros-text;
+                    justify-content: center;
+                    align-items: center;
+                    background-color: $color-cuarto;
+                    margin: 2rem 3rem;
+                    margin-right: 0rem;
+                    @include medidas (55vh, 51vw);
+                    padding: 2rem 3.5rem 2rem 2rem;
+                    text-align: right;
+                    font-size: 1.1rem;
+                }
+                .foto-nosotros {
+                    grid-area: foto-nosotros;
+                    margin: 2rem 5rem;
+                    margin-left: 0rem;
+                    @include medidas (70vh, 51vw);
+                }
+            }
+            .abrimos {
+                height: 25rem;
+                h2 {
+                font-size: 3.5rem;
+                margin-top: 3rem;
+                }
+                .div-abrimos {
+                    display: grid;
+                    margin: 5rem;
+                    grid-template-columns: 2fr 1fr;
+                    grid-area: "video texto-video";
+                    .video {
+                        margin: 0rem;
+                        grid-area: video;
+                        .video-pretos {
+                            @include medidas (85vh, 51vw);
+                        }
+                    }
+                    .texto-video {
+                        grid-area: texto-video;
+                        background-color: $color-terciario;
+                        color: $color-principal;
+                        @include medidas (54vh, 51vw);
+                        margin-left: 30rem;
+                        margin-top: 0rem;
+                        padding: 3rem 2rem 2rem 3.5rem;
+                        font-size: 1.1rem;
+                        text-align: start;
+                        justify-content: center;
+                        align-items: center;
+                    }
+                } 
+            }
+        }
+    }
+
+
+    // estilos contenedor footer pagina nosotros 
+
+    .footer {
+        margin-top: 80rem;
+        padding: 3rem;
+        height: 25rem;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 3fr 1fr;
+        grid-template-areas: "div-footer div4"
+                            "div2 div4";
+        .div-footer {
+            grid-area: div-footer;
+            text-align: center;
+            h2 {
+                text-align: center;
+                font-size: 0.9rem;
+                margin-bottom: 1.5rem; 
+                margin-top: 4.5rem;
+
+            }
+            h3 {
+                font-size: 0.8rem;
+                margin-bottom: 1.5rem; 
+                }
+        } 
+        .div2{
+            grid-area: div2;
+            text-align: center;
+            margin-bottom: 2rem;
+            h4 {
+              font-size: 0.8rem;  
+            }
+        }
+    
+        .div4 {
+            grid-area: div4;
+            a img {
+              @include medidas (80vh, 25vw);
+              padding-left: 2rem;  
+            }
+        }
+    }
+}
+
+// inicio estilos pagina servicios vista destock
+
+@media screen and (min-width:1024px) {
+
+    .header-pag {
+        justify-content: end;
+        .paginas {
+            width: 100%;
+            flex-direction: row;
+        }
+        .lista {
+            .nav-item {
+                margin-left: 1rem;
+                .nav-link {
+                   font-size: 1.1rem; 
+                }
+                .dropdown-menu {
+                   .dropdown-item {
+                    display: block;
+                    text-align: start;
+                    font-size: 1rem;
+                    line-height: 0.6rem;
+                    }   
+                }    
+            }
+        }
+    }
+
+
+    // estilos contenedor main pagina servicios
+
+
+    .main-servicios {
+        .nuestros-servicios {
+            font-size: 4rem;
+            width: 100%;
+        }
+        .sec-servicios {
+            display: grid;
+            height: 90rem;
+            width: 100%;
+            background-color: $color-secundario;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-areas: "contenedor-azul contenedor-amarillo contenedor-azulino";
+            .contenedor-azul {
+                grid-area: contenedor-azul;
+                background-color: $color-secundario;
+                padding-top: 20rem;
+                width: 100%;
+                .club-servicios {
+                    .club {
+                        align-self: start;  
+                        .club-img {
+                            @include medidas (20rem, 20rem);
+                            margin-top: 3.5rem;
+                            margin-left: 0rem;
+                            padding: 0rem;
+                        }
+                        }
+                        .h2-uno {
+                            margin: 3rem;
+                            a {
+                              font-size: 3rem;  
+                            }
+                        }
+                        .contenedor-uno {
+                            margin: 1rem;
+                            padding: 1.5rem;
+                            .p-uno {
+                                font-size: 1.3rem;  
+                            }   
+                        } 
+                }
+            }
+            .contenedor-amarillo {
+                grid-area: contenedor-amarillo;
+                padding-top: 20rem;
+                height: 90rem;
+                width: 100%;
+                .bar-servicios {
+                    height: 65rem;
+                    .h2-dos {
+                        margin: 3rem;
+                        a {
+                          font-size: 3rem;  
+                        }
+                    }
+                    .contenedor-dos {
+                        margin: 1rem;
+                        padding: 1.5rem;
+                        .p-dos {
+                            font-size: 1.3rem;  
+                        }   
+                    }
+                    .bar {
+                        .bar-img {
+                            @include medidas (25rem, 25rem);
+                            padding: 1rem;
+                        }
+                    }
+                      
+                }
+            }
+            .contenedor-azulino {
+                grid-area: contenedor-azulino;
+                background-color: $color-secundario;
+                padding-top: 0rem;
+                height: 90rem;
+                width: 100%;
+                .eventos-servicios {
+                    height: 60rem;
+                        .eventos {
+                            align-self: end;
+                            .eventos-img {
+                                @include medidas (22em, 22rem);
+                                padding: 1rem;
+                                padding-right: 0rem;
+                            } 
+                        }
+                        .h2-tres {
+                            margin: 3rem;
+                            a {
+                              font-size: 3rem;  
+                            }
+                        }
+                            .contenedor-tres {
+                                margin: 1rem;
+                                padding: 1.5rem;
+                                .p-tres {
+                                    font-size: 1.3rem;  
+                                }   
+                            }    
+                }
+            }  
+        }
+        .boton-sec {
+            background-color: $color-secundario;
+            .contactanos {
+                @include medidas (15rem, 5rem);
+                a {
+                    font-size: 1.3rem;
+                    color: $color-principal;
+                }
+            }       
+        }                     
+    }
+
+
+
+    // estilos contenedor footer pagina servicios
+
+
+    .footer-servicios {
+        margin-top: 0rem;
+        padding: 3rem;
+        height: 25rem;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 3fr 1fr;
+        grid-template-areas: "div-footer div4"
+                            "div2 div4";
+        .div-footer {
+            grid-area: div-footer;
+            text-align: center;
+            h2 {
+                text-align: center;
+                font-size: 0.9rem;
+                margin-bottom: 1.5rem; 
+                margin-top: 4.5rem;
+
+            }
+            h3 {
+                font-size: 0.8rem;
+                margin-bottom: 1.5rem; 
+                }
+        } 
+        .div2{
+            grid-area: div2;
+            text-align: center;
+            margin-bottom: 2rem;
+            h4 {
+              font-size: 0.8rem;  
+            }
+        }
+    
+        .div4 {
+            grid-area: div4;
+            a img {
+              @include medidas (67vh, 24vw);
+              padding-left: 2rem;  
+            }
+        }
+    }
+}
+
+
+// incio estilos pagina galeria de fotos vista destock 
+
+
+@media screen and (min-width:1024px) {
+
+    .galeria-fotos {
+        height: 70rem;
+        .titulo-galeria {
+            font-size: 4rem;margin-bottom: 5rem;
+        }
+        .c-galeria {
+            .club-galeria {
+                a {
+                    font-size: 3rem; 
+              }
+            }
+            .foto-club {
+                .img-club {
+                    @include medidas (25rem, 25rem);
+                }
+            }
+        }
+        .carousel {
+            padding: 0rem 7rem;
+            .carousel-inner {
+                @include medidas (50rem, 40rem);
+        
+            }
+        }
+        .b-galeria{
+            margin-top: 6rem;
+            background-color: $color-principal;
+            .foto-bar {
+                padding: 2rem;
+                margin-top: 3rem;
+                .img-bar {
+                    @include medidas (26rem, 24rem)
+                }
+            }
+            .bar-galeria {
+                a {
+                    font-size: 3rem; 
+            }
+            }
+        }
+        .div-carousel {
+            padding: 4rem 7rem;
+            .carousel-inner {
+                @include medidas (50rem, 40rem);
+            }
+        }
+        .e-galeria {
+            padding: 7rem 0rem;
+            .eventos-galeria {
+                a {
+                    font-size: 3rem;
+            }
+            }
+            .foto-eventos {
+                .img-eventos {
+                    @include medidas (27rem, 22rem);
+                }
+            }
+        }
+        .carousel {
+            padding: 3rem 7rem;
+            .carousel-inner {
+                @include medidas (50rem, 40rem);
+        
+            }
+        }
+    }
+
+}
+
+
+

@@ -1,0 +1,45 @@
+
+/*  reset  */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+
+.body-principal {
+    background: linear-gradient( to bottom, #6079B8, #568317) ;
+    background-position: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+
+
+@import "base/variables";
+@import "base/mixins";
+@import "base/extend"; 
+
+@import "components/header";
+@import "components/main";
+@import "components/footer";
+
+@import "components/mediaqueries";
+
+
+body {
+    background-color: $color-principal;
+    height: 100vh;
+    font-family: $letra-textos;
+}
+
+
+.body-servicios {
+    background-color: $color-terciario;
+    height: 100vh;
+    font-family: $letra-textos;
+}
+
+
